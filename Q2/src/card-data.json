@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Current Temperature",
+    "value": 31
+  },
+  {
+    "title": "Weekly Average Temperature",
+    "value": 31
+  },
+  {
+    "title": "Weekly Average Rainfall",
+    "value": 23
+  },
+  {
+    "title": "Weekly Average Humidity",
+    "value": 76
+  }
+]

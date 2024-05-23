@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f9f9f9;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #202020;
+    border-radius: 100vh;
+    background-clip: padding-box;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #202020cc;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Hanken Grotesk';
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
