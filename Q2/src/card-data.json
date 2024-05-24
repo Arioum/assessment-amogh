@@ -1,18 +1,22 @@
 [
   {
     "title": "Current Temperature",
-    "value": 31
+    "value": "31°",
+    "icon": "🌡️"
   },
   {
     "title": "Weekly Average Temperature",
-    "value": 31
+    "value": "30°",
+    "icon": "🌤️"
   },
   {
     "title": "Weekly Average Rainfall",
-    "value": 23
+    "value": "23",
+    "icon": "🌧️"
   },
   {
     "title": "Weekly Average Humidity",
-    "value": 76
+    "value": "76%",
+    "icon": "💧"
   }
 ]
