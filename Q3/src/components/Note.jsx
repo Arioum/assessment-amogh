@@ -5,7 +5,7 @@ const Note = ({ item, deleteItem }) => {
         {item.content}
       </span>
       <button
-        className='bg-[#202020] text-white p-[.6em_2em] rounded-[5px] md:w-[100%] sm:text-[.8rem]'
+        className='bg-[#202020] text-white p-[.6em_2em] rounded-[5px] md:w-[100%] sm:text-[.8rem] hover:bg-[#202020]/80'
         onClick={() => deleteItem(item.id)}
       >
         Delete

@@ -12,7 +12,7 @@ import {
 
 const Chart = ({ data }) => {
   return (
-    <div className='flex-1 glassmorph flex flex-col gap-[1em] justify-between h-[500px] p-[1em] border rounded-[10px] xl:h-[450px] md:h-[300px]'>
+    <div className='flex-1 glassmorph flex flex-col gap-[1em] justify-between min-h-[500px] p-[1em] border rounded-[10px] xl:min-h-[450px] md:min-h-[300px]'>
       <h3 className='px-1 text-[1.8rem] font-[800] xl:text-[1.6rem] md:text-[1.2rem] sm:text-[1.2rem]'>
         Weekly Temperature
       </h3>

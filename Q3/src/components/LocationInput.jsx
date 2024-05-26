@@ -22,7 +22,7 @@ const LocationInput = ({ setLocation }) => {
         placeholder='Enter city name (ex: Mumbai)'
         maxLength={150}
       />
-      <button className='bg-[#202020] text-white p-[.6em_2em] rounded-[5px]'>
+      <button className='bg-[#202020] text-white p-[.6em_2em] rounded-[5px] hover:bg-[#202020]/80'>
         Search
       </button>
     </form>
