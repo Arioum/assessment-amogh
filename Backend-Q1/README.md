@@ -10,19 +10,39 @@
 `@app.put("/posts/{post_id}")` - Updates a specific post given it's `post_id`.<br>
 `@app.delete("/posts/{post_id}")` - Deletes a specific post given it's `post_id`.<br>
 <br>
-#### To setup:
+#### To setup project locally:
 
 **Prerequisites:**
 Install Python with pip
 
-**Install FastApi:**
+
+**1. Clone this repo**
+
+```
+git clone https://github.com/Arioum/assessment-amogh.git
+```
+
+**2. Do the following steps:**
+
+```
+cd assessment-amogh
+cd Backend-Q1
+```
+
+**3. Install FastApi:**
 
 ```bash
 pip install fastapi
 ```
 
-**To run the app:**
+**4. Start the app:**
 
 ```bash
 fastapi dev app.py
+```
+
+**5. URL To test the endpoints:**
+
+```bash
+http://127.0.0.1:8000
 ```
