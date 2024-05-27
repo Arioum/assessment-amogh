@@ -1,4 +1,4 @@
-## Qilo Assessment - Backend Q1
+## Backend Assessment - Q1
 
 #### This is a fast API backend which has a few endpoints exposed:
 
@@ -9,7 +9,7 @@
 `@app.post("/posts")` - Creates a new post.
 `@app.put("/posts/{post_id}")` - Updates a specific post given it's `post_id`.
 `@app.delete("/posts/{post_id}")` - Deletes a specific post given it's `post_id`.
-
+<br>
 #### To setup:
 
 **Prerequisites:**
