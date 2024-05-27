@@ -27,7 +27,7 @@ function useWeatherData() {
       Math.floor(totalHumidity / data.length) || null;
 
     const chartDataSet = data.map((day) => ({
-      avgTemp: (day.max_temp + day.min_temp) / 2,
+      avgTemp: parseFloat(((day.max_temp + day.min_temp) / 2).toFixed(2)),
       minTemp: day.min_temp,
       maxTemp: day.max_temp,
       date: day.datetime,
@@ -40,7 +40,6 @@ function useWeatherData() {
       weeklyAverageHumidity,
       chartDataSet,
     });
-
   }, []);
 
   return [weatherData, extractWeatherData];

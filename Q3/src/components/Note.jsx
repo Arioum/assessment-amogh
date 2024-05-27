@@ -1,7 +1,7 @@
 const Note = ({ item, deleteItem }) => {
   return (
     <article className='flex gap-[2em] justify-between items-center bg-[#fff] border-[#adadad] border-[2px] rounded-[10px] p-[.5em] md:flex-col md:gap-[1em] md:items-start'>
-      <span className='text-[1rem] font-[500] break-all sm:text-[.9rem]'>
+      <span className='text-[1rem] font-[500] sm:text-[.9rem] break-word max-w-[75vw] overflow-hidden'>
         {item.content}
       </span>
       <button
