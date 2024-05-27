@@ -8,12 +8,14 @@ import useWeatherData from '../hooks/useWeatherData';
 
 const WeatherSection = () => {
   const [location, setLocation] = useState('Manipal');
-  const [weatherData, extractWeatherData] = useWeatherData();
-  const { today, pastDate } = useDateRange();
+  // Below are two user defined hooks
+  const [weatherData, extractWeatherData] = useWeatherData(); // Filters weather data and gives us what is required.
+  const { today, pastDate } = useDateRange(); // Gives us two dates, both are formated as per API requirements.
 
   useEffect(() => {
     const fetchWeatherData = async () => {
       if (location && today && pastDate) {
+        // API call
         await axios
           .get(
             `https://api.weatherbit.io/v2.0/history/daily?city=${location}&start_date=${pastDate}&end_date=${today}&key=${
@@ -21,6 +23,7 @@ const WeatherSection = () => {
             }`
           )
           .then((response) => {
+            // The response is passed to the below hook which will filter the data
             extractWeatherData(response.data.data);
           })
           .catch((error) => {
@@ -29,7 +32,7 @@ const WeatherSection = () => {
       }
     };
     fetchWeatherData();
-  }, [extractWeatherData, location, pastDate, today]);
+  }, [extractWeatherData, location, pastDate, today]); // This will run anytime the value of these dependencies change
 
   return (
     <>

@@ -7,6 +7,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
+// Dummy data for chart
 const data = [
   {
     name: 'Monday',

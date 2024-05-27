@@ -9,7 +9,6 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-
 const Chart = ({ data }) => {
   return (
     <div className='flex-1 glassmorph flex flex-col gap-[1em] justify-between min-h-[500px] p-[1em] border rounded-[10px] xl:min-h-[450px] md:min-h-[300px]'>

@@ -2,12 +2,14 @@ import { useState } from 'react';
 
 export const InputList = ({ createList }) => {
   const [inputValue, setInputValue] = useState('');
-  const [alertActive, setAlertActive] = useState(false);
+  const [alertActive, setAlertActive] = useState(false); // This flag is used to display a user prompt
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // This condition handles the case where the user tries to create a note with no content
     if (inputValue.length < 1) {
       setAlertActive(true);
+      // This displays a prompt message for the user for 1000ms
       setTimeout(() => {
         setAlertActive(false);
       }, 1000);
@@ -28,6 +30,7 @@ export const InputList = ({ createList }) => {
           placeholder='Type anything...'
           wrap='hard'
         />
+        {/* This is the prompt that will be displayed when the user tires submitting an empty note */}
         {alertActive && (
           <span className='text-[red] absolute bottom-2 right-4'>
             Note cannot be empty

@@ -7,7 +7,7 @@ const App = () => {
   const [listItems, setListItems] = useState(listData);
 
   function createListItem(content) {
-    const id = Math.floor(Math.random() * 5000 + 1);
+    const id = Math.floor(Math.random() * 5000 + 1); // Creates a random note ID
     setListItems((prevItems) => [{ id, content }, ...prevItems]);
   }
 

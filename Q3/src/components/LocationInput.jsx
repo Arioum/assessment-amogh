@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
 const LocationInput = ({ setLocation }) => {
-  const [inputValue, setInputValue] = useState('Manipal');
+  const [inputValue, setInputValue] = useState('Manipal'); // This is a default value
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // This condition makes sure that there is atlest 1 character before the API is called.
     if (inputValue.length < 1) return;
     setLocation(inputValue);
   };
